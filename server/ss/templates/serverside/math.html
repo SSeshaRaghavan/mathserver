@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h2>GST Calculator</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label>Price</label>
+            <input type="text" name="Price" required>
+            <label>GST</label>
+            <input type="text" name="GST" required>
+            <button type="submit">Calculate Bill</button>
+        </form>
+        <h3>Total Bill: {{bill}}</h3>
+    </body>
+</html>
